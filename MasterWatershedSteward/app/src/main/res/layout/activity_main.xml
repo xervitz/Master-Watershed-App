@@ -9,8 +9,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mws.masterwatershedsteward.MainActivity">
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:ems="10"
+        android:id="@+id/staticText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="You shouldn&apos;t be able to edit this"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Button"
+        android:id="@+id/buttTest"
+        android:layout_below="@+id/staticText"
+        android:layout_alignRight="@+id/staticText"
+        android:layout_alignEnd="@+id/staticText"
+        android:layout_marginTop="82dp" />
 </RelativeLayout>
